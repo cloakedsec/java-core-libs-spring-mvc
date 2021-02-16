@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\Desktop\\cloakedsec-master\\activeproject\\node-app"
+		},
+		{
+			"path": "cloakedsec.github.io"
+		},
+		{
+			"path": "..\\..\\Desktop\\cloakedsec-master"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"files.exclude": {
+			"**/.classpath": true,
+			"**/.project": true,
+			"**/.settings": true,
+			"**/.factorypath": true
+		},
+		"liveServer.settings.multiRootWorkspaceName": "cloakedsec.github.io",
+		"compile-hero.disable-compile-files-on-did-save-code": true,
+		"editor.formatOnType": true
+	}
+}

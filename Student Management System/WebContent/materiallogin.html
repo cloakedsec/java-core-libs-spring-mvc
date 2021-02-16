@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Form</title>
+
+
+
+<link rel="stylesheet" href="css/materiallogin.css">
+
+
+</head>
+
+<body>
+	<hgroup>
+		<h1>Login</h1>
+		<h3>To Your Home</h3>
+	</hgroup>
+	<form action="check.jsp">
+		<div class="group">
+			<input type="text" name="username" required><span
+				class="highlight"></span><span class="bar"></span> <label>Name</label>
+		</div>
+		<div class="group">
+			<input type="password" name="pwd" required><span
+				class="highlight"></span><span class="bar"></span> <label>Password</label>
+		</div>
+		<button type="submit" class="button buttonBlue">
+			Login
+			<div class="ripples buttonRipples">
+				<span class="ripplesCircle"></span>
+			</div>
+		</button>
+	</form>
+	<footer>
+		<a href="http://www.polymer-project.org/" target="_blank"><img
+			src="https://www.polymer-project.org/images/logos/p-logo.svg"></a>
+		<p>
+			You Gotta Love <a href="http://www.polymer-project.org/"
+				target="_blank">Google</a>
+		</p>
+	</footer>
+	<script
+		src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+	<script src="js/materiallogin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+It changed to Bob which is not really good.
+
+Right so we declare it here it just kind of runs sequentially we declare it and then we reassign it
+
+to a new value and we cancel that out and now we are having an unintended consequence.
+
+Right because this variable is scoped to the entire function.
+
+The show even further how this could be bad.
+
+You know if we if we say should say her true or really say high equals true.
+
+Right.
+
+So let's test this even deeper.
+
+So you know I'll get rid of some of this code here.
+
+So here is a VAR a my name equals Chris.
+
+And then we say if really say hi really say hi equals true Leclaire another variable for my last name
+
+equals just to make something up.
+
+Smith So again this variable even though it's kind of nested deeper inside the if statement.
+
+And if your eyes are kind of cross I don't blame you.
+
+But even though this variable is declared deeper within this statement I do have access to it within
+
+the scope of the function.
+
+So here I can reassign it.
+
+My last name equals Jones for example.
+
+And again my Linter is telling me that hey this is out of scope.
+
+But again this is a valid javascript's not going to crash.
+
+I can see my my last name.
+
+It looks like it's still running through all the code here run it.
+
+OK let's console log onto a log.
+
+Hi Plus my name plus my last name.
+
+We don't have any spaces in here but just to demonstrate this.
+
+Hi Chris Jones right.
+
+So this is kind of a pain.
+
+What if you have tons of nested stuff going on in your function you do have access to the variable outside
+
+the scope.
+
+Not really an ideal situation.
+
+And you know if you try to access a variable outside the scope of a function it's not going to work.
+
+So instead of say Hi Here let's try to access a console log my name.
+
+Let's see what happens here.
+
+Crear run.
+
+Of course it crashes because my name is not defined at this point in our program.
+
+And you know even if you move this down to after invoking the function it's still going to fail.
+
+Right because you're trying to access something outside of the scope.
+
+So clear run right so error my name is not defined.
+
+You know let me save that and run it again.
+
+Right so hi Chris Jones this runs and then this line of code runs.
+
+And of course my name is not defined outside of this function.
+
+So this tells you a couple of things.
+
+First of all you should really be careful with globally declaring variables.
+
+Just do it as least you know the least amount as possible because if I did declare my name at the very
+
+top it's not necessarily anything wrong with that but it should always be careful in terms of scoping
+
+your app.
+
+Your function should be kind of minimally scoped as possible and on the other hand you do have to be
+
+aware that variables do get scoped to the function.
+
+Now that brings us to some E-6 code finally.
+
+So iOS 6 code introduces let.
+
+Which is kind of in contrast to var.
+
+So let me rewrite some of this using LET instead.
+
+And I'm going to get rid of console log down here.
+
+So let's say you know let's keep var should say hi should really say high but let's say we make my name
+
+into a LET instead of var So we're declaring this now like a variable.
+
+And for all intents and purposes acts like a variable with the exception that lead is scoped to the
+
+block.
+
+Right so recall that this and you know I'll get rid of this.
+
+A couple of lines of code here actually kill get rid of my last name like so.
+
+So let is scoped to the block and the block being you know this line of code that follows an if statement.
+
+So I will not have access to my name outside of this block meaning if I try to run this code it's going
+
+to crash.
+
+Let's see what happens.
+
+Run ever.
+
+My name is not defined.
+
+Right so this is going to help us a lot in terms of scoping out our our app or our function or whatever
+
+it may be.
+
+Right.
+
+So here we are declaring it if we want to say Consolo my name inside the block that will totally work.
+
+So like so clear it will run it totally works right.
+
+And you know what.
+
+Let's add a space here just for aesthetic reasons plus it's so we can run it and it works.
+
+We do not have access to this variable outside of this particular block.
+
+Right.
+
+So that's really key to understanding when it comes to let.
+
+And that doesn't mean you can't kind of filter it down.
+
+If I declared at the top of this function for example let let And if I wanted to cancel log out one
+
+of those for example should say hi instead of Hi my name.
+
+All right let's see if this works clear it will run it again.
+
+True right.
+
+So this block is still within the context of this function block.
+
+Therefore I do have access down the road but I can't pass anything I declare back up out of the block.
+
+ Autoscroll active

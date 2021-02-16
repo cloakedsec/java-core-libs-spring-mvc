@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test name="Registration Test" allow-return-values="true">
+    <classes>
+      <class name="testcases.LoginTest"/>
+    </classes>
+  </test>
+  <test name="Login Test" allow-return-values="true" thread-count="5">
+    <classes>
+      <class name="testcases.RegTest"/>
+    </classes>
+  </test>
+  <test name="Temp Test" allow-return-values="true" thread-count="5">
+    <classes>
+      <class name="testcases.Temp"/>
+    </classes>
+  </test>
+   <!-- Test -->
+</suite> <!-- Suite -->
